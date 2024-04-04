@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  main {
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 920px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 3.125rem;
+    background-color: #e4f1f3
+  }
+  
+  .wrapper {
+    overflow: hidden;
+  }
+  
+  .content h2 {
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+  }
+  
+  .content p {
+    margin-bottom: 0.5rem;
+  }
+
+  .content {
+    margin: 5px;
+  }
+
+  .wrapper{
+    margin: 5px;
+  }
+
+  .navigation{
+    margin: 5px;
+  }
+
+  button {
+    border: none;
+    background-color: #7bcc3c;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .content button:active {
+    -webkit-transform: scale(0.96);
+    transform: scale(0.96);
+  }
+  
+  .images {
+    width: 900px;
+    height: 500px;
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .images .image {
+    height: 100%;
+    width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+  
+  .image:nth-child(1) {
+    background: url("https://www.tomorrowland.com/src/Frontend/Themes/tomorrowland/Core/Layout/images/timeline/2023-1.jpg")
+      no-repeat 50% 50% / cover;
+      background-position: center;
+  }
+  
+  .image:nth-child(2) {
+    background: url("https://www.jbl.se/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw0ccbf209/pdp/JBL%20Charge5%20Tomorrowland%20Lifestyle01%20904x560%20for%20Web.png?sw=904&sh=560")
+      no-repeat 50% 50% / cover;
+      background-position: center;
+  }
+  
+  .image:nth-child(3) {
+    background: url("https://wallpapers.com/images/hd/official-tomorrowland-flag-8bjkkoutztk20yow.jpg")
+      no-repeat 50% 50% / cover;
+      background-position: center;
+  }
+  
+  .image:nth-child(4) {
+    background: url("https://news.cgtn.com/news/2020-06-05/Virus-forces-Belgium-s-Tomorrowland-dance-festival-online-R4s1ivwMiQ/img/bc02d31c837f48c4ba0d3937091b20bb/bc02d31c837f48c4ba0d3937091b20bb.png")
+      no-repeat 50% 50% / cover;
+      background-position: center;
+  }
+  
+  .navigation .right, .navigation .left {
+    height: 60px;
+    width: 60px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  
+  .navigation .right:hover,
+  .navigation .left:hover {
+    background-color: #333;
+    color: white;
+  }
+  
+  .navigation .right:active, .navigation .left:active {
+    -webkit-transform: scale(0.96);
+    transform: scale(0.96);
+  }
+  
+  .images {
+    -webkit-transition: 0.35s
+      cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+
+  @media screen and (max-width: 1300px){
+    main{
+      flex-direction: column;
+      height: 900px;
+    }
+
+    .images {
+      width: 900px;
+      height: 700px;
+    }
+
+    .content{
+      padding-bottom: 20px;
+    }
+
+    .navigation{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .left{
+      display: none;
+    }
+
+    .navigation{
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .right{
+      margin: 5px;
+    }
+
+    .left{
+      margin: 5px;
+    }
+  }
+
+  @media screen and (max-width: 1000px){
+    .images {
+      width: 700px;
+      height: 500px;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .images {
+      width: 480px;
+      height: 400px;
+    }
+  }
+
+  @media screen and (max-width: 480px){
+    main{
+      flex-direction: column;
+      height: 700px;
+    }
+
+    .content h2 {
+      margin-bottom: 1rem;
+      font-size: 26px;
+    }
+
+    .images {
+      width: 300px;
+      height: 400px;
+    }
+  }
+  @media screen and (max-width: 300px){
+    .images{
+      width: 200px;
+      height: 150px;
+    }
+  }

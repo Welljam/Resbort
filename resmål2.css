@@ -1,0 +1,115 @@
+@font-face{
+    font-family: 'Cabin';
+    src: url('Cabin-VariableFont_wdth\,wght.ttf') format('truetype');
+}
+
+body{
+    margin: 0;
+    font-family: "Cabin" !important;
+}
+
+.item {
+    display: grid;
+}
+
+.container{
+    display: grid;
+    margin: 50px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 15px;
+     
+}
+
+.item-img-2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-img-3{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}   
+
+.item-1{
+    grid-area: 2 / 1 / 4 / 3;
+    z-index: 1;
+     
+}
+
+.item-2{
+    grid-area: 1 / 3 / 5 / 7;
+    overflow: hidden;
+     
+}
+
+.item-3{
+    grid-area: 5 / 1 / 8 / 3;
+     
+}
+
+.item-4{
+    grid-area: 6 / 4 / 8 / 7;
+     
+}
+
+button {
+    border: none;
+    background-color: #7bcc3c;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+}
+  
+button:active {
+    -webkit-transform: scale(0.96);
+    transform: scale(0.96);
+}
+
+.nav-logo {
+    font-size: 33px;
+    font-weight: 500;
+    color: #475569;
+    text-decoration: none;
+}
+
+.nav-logo:hover {
+    font-size: 33px;
+    font-weight: 500;
+    color: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-position{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+      margin: 30px;
+      grid-template-rows: auto auto auto auto auto auto; 
+      grid-template-columns: auto; 
+      grid-gap: 10px;
+    }
+    .item-1 {
+      grid-area: 1 / 1 / 2 / 2;   
+    }
+    .item-2 {
+      grid-area: 2 / 1 / 3 / 2;   
+    }
+    .item-3 {
+      grid-area: 3 / 1 / 4 / 2;   
+    }
+    .item-4 {
+      grid-area: 4 / 1 / 5 / 2;   
+    }
+    .nav-position{
+      margin: 30px auto;
+    }
+  }

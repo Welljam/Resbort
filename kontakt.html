@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakta Oss</title>
+  
+  <link rel="stylesheet" href="kontakt.css">
+</head>
+<body>
+  <div class = "nav-position">
+    <a href="index.html" class="nav-logo">Hem</a>
+  </div>
+    <div class="container">
+        <h1>Kontakta oss</h1>
+        <form id="contactForm" action="#" method="post">
+          <label for="firstName">Förnamn:</label>
+          <input type="text" id="firstName" name="firstName" required>
+          
+          <label for="surname">Efternamn:</label>
+          <input type="text" id="surname" name="surname" required>
+    
+          <label for="telephone">Telefonnummer:</label>
+          <input type="tel" id="telephone" name="telephone" required>
+    
+          <label for="email">E-post:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="destination">Resmål:</label>
+          <select id="destination" name="destination" required>
+            <option value="">Välj Resmål</option>
+            <option value="resmal1">Resmål 1</option>
+            <option value="resmal2">Resmål 2</option>
+            <option value="resmal3">Resmål 3</option>
+            <option value="resmal4">Resmål 4</option>
+          </select>
+    
+          <label for="message">Meddelande:</label>
+          <textarea id="message" name="message" maxlength="100" placeholder="Skriv ett meddelande (max 100 karaktärer)"></textarea>
+          
+          <input type="submit" value="Skicka">
+        </form>
+    
+        <div id="submittedData" style="display: none; width: 100%;">
+          <h2 style="text-align: center;">Skickad</h2>
+          <table>
+            <tr style="word-wrap: break-word;">
+              <th>Förnamn</th>
+              <th>Efternamn</th>
+              <th>Telefonnummer</th>
+              <th>E-post</th>
+              <th>Resmål</th>
+              <th>Meddelande</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+  <script src ="kontakt.js"></script>
+</body>
+</html>
