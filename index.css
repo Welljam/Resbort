@@ -119,20 +119,17 @@ img{
 }
 
 .plats4-video{
-    width: 100%;
-    height: 600px;
     object-fit: cover;
     z-index: -100;
     padding-right: 100px;
+    padding-top: 100px;
 }
 
 iframe{
-    width: 400px;
-    height: 600px;
-}
-
-.plats4-position{
-    padding-right: 100px;
+    width: 600px;
+    height: 400px;
+    cursor: auto;
+    pointer-events: none;
 }
 
 .plats4-text p{
@@ -168,7 +165,7 @@ iframe{
 
 .hiddenRight{
     opacity: 0;
-    transition: all 2s;
+    transition: all 3s;
     transform: translateX(0%);
     filter:blur(50px);
 }
@@ -257,6 +254,14 @@ hr{
     .plats3-text{
         margin: 20px;
     }
+    .plats4-video{
+        padding-right: 50px;
+        padding-top: 100px;
+    }
+    iframe{
+        width: 400px;
+        height: 250px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -288,10 +293,13 @@ hr{
     .plats3-img {
       max-width: 100%;
     }
-    .plats4-video {
-      height: auto;
-      max-width: 100%;
-      padding-right: 0;
+    .plats4-video{
+        padding-right: 50px;
+        padding-top: 20px;
+    }
+    iframe{
+        width: 100%;
+        height: 250px;
     }
     .plats4-position, .plats4-text{
         margin-left: 40px;
@@ -310,6 +318,13 @@ hr{
     }
     .plats2 > h2{
         font-size: 26px;
+    }
+    .plats4-video{
+        padding-right: 50px;
+        padding-top: 20px;
+    }
+    iframe{
+        height: 200px;
     }
   }
 
